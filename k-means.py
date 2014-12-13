@@ -56,7 +56,7 @@ def kmeans(clusters,classes,sampleSpace,max_iter,verbose):
 					J += VJ
 	return [clusters,representatives,J]
 	
-## Funciones para trabajar con vectores ##
+## Funciones vectores ##
 def vectorxvector(v,y):
 	s = 0
 	for n in xrange(len(v)):
@@ -81,6 +81,7 @@ def vectorabs(v):
 def vectorpow2(v):
 	return vectorxvector(v,v)
 
+# Funciones k-means #
 def get_sample_cluster(clusters,sample):
 	for icluster in xrange(len(clusters)):
 		for point in clusters[icluster]:
@@ -90,6 +91,7 @@ def get_sample_cluster(clusters,sample):
 def genera_espacio_muestral_aleatorio(n,inf,sup):
 	return [[randint(inf,sup),randint(inf,sup)] for x in xrange(n)]
 
+# Funciones Matplotlib #
 def generar_colores(numclasses):
 	return [plot_colours.pop(randint(0,len(plot_colours)-1)) for x in xrange(numclasses)]
 	
