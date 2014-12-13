@@ -4,8 +4,8 @@
 <h2> K-means implementation with Python and representation using matplotlib </h2>
 <br><img width=500 height=400 src="http://i59.tinypic.com/mjwvm1.png"/>
 
-Test with 2 classes (clase1 and clase2) with sample space:
-  X   Y
+Test with 2 classes (clase1 and clase2) with sample space: <br>
+  X   Y <br>
 [1.2,2.3]<br>
 [7,5]<br>
 [1.7,3.5]<br>
